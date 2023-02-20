@@ -1,0 +1,83 @@
+body{
+    background-color: black;
+    padding-top: 59px;
+    height: fit-content;
+}
+#searchitem{
+    color: yellow;
+    border-color: yellow;
+}
+#searchbox{
+    background-color: yellow;
+    border: 3px solid white;
+}
+img.carouselimg{
+    height: 700px;
+    border: 3px solid yellow;
+}
+#whatscookingh1{
+    text-align: center;
+    color: yellow;
+    font-size: 32px;
+}
+.testdiv{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+}
+.card-body{
+    border: 1px solid yellow;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 5px;
+}
+.card{
+    border-color: yellow;
+}
+.mailinglist{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+}
+
+
+.footercontainer{
+    height: 200px;
+    width: 100%;
+    background-color: black;
+    color: yellow;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  .fa:hover {
+    opacity: 0.7;
+    border-radius: 50%;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }    

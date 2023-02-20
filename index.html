@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lemon fine dining</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./images/lemon-logo.jpg"
+            width="30px"
+            height="30px"
+            alt=""
+          />&nbsp; The Lemon</a
+        >
+        <button 
+          id="navtog"
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 menunavtext">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Takeaway</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reservation">Book-a-table</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Locations</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Specials
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Monday</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Tuesday</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Wednesday</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Thrsday</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Friday</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Saturday</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Sunday</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              id="searchbox"
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-outline-success"
+              id="searchitem"
+              type="submit"
+            >
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+<!-- carousel -->
+
+<div
+        id="carouselExampleInterval"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+          </button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">
+          </button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">
+          </button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/carousel3.jpg" class="carouselimg d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/carousel2.jpg" class="carouselimg d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/carousel1.jpg" class="carouselimg d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+      <!-- Section 2 -->
+      <hr>
+      <h1 id="whatscookingh1">What's cooking ????......</h1>
+      <hr>
+     
+        <div class="container">
+            
+            <div class="row justify-content-center g-5">
+                <div class="col-md " id="reservation" >
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <img src="./images/reserved.jpg" class="card-img-top" alt="..." height="300rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Reservation</h5>
+                          <p class="card-text">Book your table at one of our restauarants near you</p>
+                          <a href="#" class="btn btn-warning">Reserve now</a>
+                        </div>
+                      </div>
+                </div>
+          
+                <div class="col-md" >
+                    <div class="card m-auto" style="width: 18rem;">
+                        <img src="./images/catering.jpg" class="card-img-top" alt="..."height="300rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Catering</h5>
+                          <p class="card-text">We have a veriety of customizable spreads for all occassions</p>
+                          <a href="#" class="btn btn-warning">See Packages</a>
+                        </div>
+                      </div>
+                </div>
+            
+                <div class="col-md" >
+                    <div class="card m-auto" style="width: 18rem;">
+                        <img src="./images/privateevent.jpg" class="card-img-top" alt="..." height="300rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Private Events</h5>
+                          <p class="card-text">Pleanty of table settings and menus for private events</p>
+                          <a href="#" class="btn btn-warning">Events</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            
+            <div class="row justify-content-center g-5">
+                <div class="col-md " >
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <img src="./images/loyalty.jpg" class="card-img-top" alt="..." height="300rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Loyalty programme</h5>
+                          <p class="card-text">Redeem your loyalty points here and claim rewards.</p>
+                          <a href="#" class="btn btn-warning">Reserve now</a>
+                        </div>
+                      </div>
+                </div>
+           
+            
+                <div class="col-md" >
+                    <div class="card m-auto" style="width: 18rem;">
+                        <img src="./images/giftcard.jpg" class="card-img-top" alt="..."height="300rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Gift cards</h5>
+                          <p class="card-text">Gift your loved ones a special meal on their special day</p>
+                          <a href="#" class="btn btn-warning">See Packages</a>
+                        </div>
+                      </div>
+                </div>
+            
+                <div class="col-md" >
+                    <div class="card m-auto" style="width: 18rem;">
+                        <img src="./images/team.jpg" class="card-img-top" alt="..." height="300rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">The team</h5>
+                          <p class="card-text">Get to know the team behindthe amazing food at Lemon </p>
+                          <a href="#" class="btn btn-warning">Events</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="mailinglist">
+            <div><h1>Join our mailing list : </h1></div>
+            <div>
+              <input class="form-control form-control-lg" type="text" placeholder="enter your email address" aria-label=".form-control-lg example">
+              <br>
+            </div>
+            <button class="btn btn-dark btnsignup"><h1>Sign up</h1></button>
+        </div>
+
+       <div class="container bg-black text-warning">
+        <div class="row">
+            <div class="col-md d-flex flex-column justify-content-around p-5">
+                <div><h4> <img src="./images/lemon-logo.jpg" width="40px" height="40px" alt=""> The Lemon restaurant</h4>
+                </div>
+                <div>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                </div>
+                
+            </div>
+            <div class="col-md d-flex flex-column justify-content-around p-5">
+                <h6>Visit us @</h4>
+                <p>Dotspace Kazhakkoottam Thiruvananthapuram</p>
+                <p>or</p>
+                <p>Phone : 00 000 0000 0 <br> e-mail : info@thelemonrestaurant.com </p>
+            </div>
+            <div class="col-md d-flex justify-content-around p-5">
+                <div>
+                    <h6>Hours <br> Dining, Takeout and Delivery</h6>
+                    <p>Every day: 11.30 A M to 11.30 P M</p>
+                    <p>©Athulprabha all rights reserved</p>
+                </div>
+            </div>
+        </div>
+
+       </div>
+            
+          
+               
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
