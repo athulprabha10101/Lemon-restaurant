@@ -116,13 +116,13 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./images/carousel3.jpg" class="carouselimg d-block w-100" alt="...">
+            <img src="./images/dessertphotography2.jpg" class="carouselimg d-block img-fluid height-90vh" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="./images/carousel2.jpg" class="carouselimg d-block w-100" alt="...">
+            <img src="./images/carousel2.jpg" class="carouselimg d-block img-fluid" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="./images/carousel1.jpg" class="carouselimg d-block w-100" alt="...">
+            <img src="./images/carousel1.jpg" class="carouselimg d-block img-fluid" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -135,7 +135,6 @@
         </button>
       </div>
     </div>
-      <!-- Section 2 -->
       <hr>
       <h1 id="whatscookingh1">What's cooking ????......</h1>
       <hr>
@@ -145,11 +144,11 @@
             <div class="row justify-content-center g-5">
                 <div class="col-md " id="reservation" >
                     <div class="card mx-auto" style="width: 18rem;">
-                        <img src="./images/reserved.jpg" class="card-img-top" alt="..." height="300rem;">
+                        <img src="./images/reserved.jpg" class="card-img-top " alt="..." height="300rem;">
                         <div class="card-body">
                           <h5 class="card-title">Reservation</h5>
                           <p class="card-text">Book your table at one of our restauarants near you</p>
-                          <a href="#" class="btn btn-warning">Reserve now</a>
+                         <a href="#" class="btn btn-warning">Reserve now</a>
                         </div>
                       </div>
                 </div>
@@ -220,10 +219,10 @@
         <div class="mailinglist">
             <div><h1>Join our mailing list : </h1></div>
             <div>
-              <input class="form-control form-control-lg" type="text" placeholder="enter your email address" aria-label=".form-control-lg example">
+              <input id="inputEmail" class="form-control form-control-lg" type="text" placeholder="enter your email address" aria-label=".form-control-lg example">
               <br>
             </div>
-            <button class="btn btn-dark btnsignup"><h1>Sign up</h1></button>
+            <button onclick="signup()" class="btn btn-dark btnsignup"><h1>Sign up</h1></button>
         </div>
 
        <div class="container bg-black text-warning">
@@ -256,8 +255,42 @@
        </div>
             
           
-               
+         <script>
+
+function ValidateEmail(input) {
+
+var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+if (input.value.match(validRegex)) {
+
+  return true;
+
+} else {
+
+  return false;
+
+}
+
+}
+
+
+
+          function signup(){
+
+
+          
+          let email = document.getElementById("inputEmail");
+          if(!ValidateEmail(email)){
+            window.alert("please enter an email address");
+          }
+          else{
+            document.getElementById("inputEmail").value = "";
+          }
+
+         }
+         </script>      
     <script
+    
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
